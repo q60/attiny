@@ -58,7 +58,7 @@ void loop() {
 
   if (uptime >= 1) {
     oled.print(F("up: "));
-    oled.print((int) uptime);
+    oled.print(uptime);
     oled.print(F(" min "));
   }
   

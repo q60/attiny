@@ -44,7 +44,6 @@ void LM35::begin(uint8_t pin_) {
 
 // Return temperature in Celsius by default. With `true` as argument - in Fahrenheit.
 int16_t LM35::temperature(bool fahrenheit) {
-  t = (float) analogRead(pin);
   if (!fahrenheit) {
     t = (float) analogRead(pin) / 1024.f * 110.f;
   } else {
